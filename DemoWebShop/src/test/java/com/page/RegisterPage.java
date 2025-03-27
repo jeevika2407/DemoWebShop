@@ -38,6 +38,15 @@ public class RegisterPage extends BasePage {
     @FindBy(xpath="//input[@id='register-button']")
     private WebElement register;
     
+    @FindBy(xpath="//div[@class=\"page-body\"]")
+	public WebElement regSts;
+
+	@FindBy(xpath="//div[@class=\"validation-summary-errors\"]")
+	public WebElement emailError;
+	
+	@FindBy(xpath="//span[text()='Last name is required.']")
+	public WebElement reqError;
+
     public void enterRegistrationDetails(String gender, String fName, String lName, String mail, String pwd, String confirmPwd) throws InterruptedException {
         if (gender.equals("male")) {
             male.click();
@@ -53,6 +62,15 @@ public class RegisterPage extends BasePage {
         
         register.click();
         Thread.sleep(1000);
-        
     }
+    public String Status() {
+		return  regSts.getText();
+	}
+	public String getEmailError() {
+		return emailError.getText();
+	}
+	public String getRegError() {
+		return reqError.getText();
+	}
+
 }

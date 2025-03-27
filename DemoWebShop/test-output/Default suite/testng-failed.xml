@@ -5,9 +5,9 @@
     <classes>
       <class name="com.test.RegisterPageTest">
         <methods>
-          <include name="setup"/>
-          <include name="close"/>
-          <include name="verifyRegisterPageNavigation"/>
+          <include name="verifyRegisterPageNavigation1" invocation-numbers="1 2"/>
+          <include name="setUp"/>
+          <include name="burnDown"/>
         </methods>
       </class> <!-- com.test.RegisterPageTest -->
     </classes>

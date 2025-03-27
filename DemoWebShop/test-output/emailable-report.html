@@ -8,30 +8,67 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">33,320</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">26,456</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.test.RegisterPageTest</td><td><a href="#m0">verifyRegisterPageNavigation1</a></td><td rowspan="2">1743035768457</td><td rowspan="2">2843</td></tr><tr class="failedeven"><td><a href="#m1">verifyRegisterPageNavigation1</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.test.HomePageTest</td><td><a href="#m2">verifyLoginPageText</a></td><td rowspan="1">1743035752319</td><td rowspan="1">168</td></tr><tr class="passedodd"><td rowspan="5">com.test.RegisterPageTest</td><td><a href="#m3">verifyRegisterPageNavigation</a></td><td rowspan="1">1743035756624</td><td rowspan="1">903</td></tr><tr class="passedodd"><td><a href="#m4">verifyRegisterPageNavigation1</a></td><td rowspan="4">1743035768564</td><td rowspan="4">7460</td></tr><tr class="passedodd"><td><a href="#m5">verifyRegisterPageNavigation1</a></td></tr><tr class="passedodd"><td><a href="#m6">verifyRegisterPageNavigation1</a></td></tr><tr class="passedodd"><td><a href="#m7">verifyRegisterPageNavigation1</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.test.RegisterPageTest</td><td><a href="#m0">verifyRegisterPageNavigation1</a></td><td rowspan="2">1743061321180</td><td rowspan="2">5165</td></tr><tr class="failedeven"><td><a href="#m1">verifyRegisterPageNavigation1</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.test.RegisterPageTest</td><td><a href="#m2">verifyRegisterPageNavigation</a></td><td rowspan="1">1743061307541</td><td rowspan="1">1712</td></tr><tr class="passedeven"><td><a href="#m3">verifyRegisterPageNavigation1</a></td><td rowspan="2">1743061321547</td><td rowspan="2">5055</td></tr><tr class="passedeven"><td><a href="#m4">verifyRegisterPageNavigation1</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.test.RegisterPageTest#verifyRegisterPageNavigation1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>null</td><td>null</td><td>null</td><td>null</td><td>null</td><td>null</td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;gender&quot; is null
-	at com.page.RegisterPage.enterRegistrationDetails(RegisterPage.java:42)
+<h2>Default test</h2><h3 id="m0">com.test.RegisterPageTest#verifyRegisterPageNavigation1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>female</td><td>jomm</td><td>N</td><td>jooommmmmmm@gmail.com</td><td>abcdef</td><td>abcdef</td><td>pass</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.AssertionError: expected [Your registration completed] but found [The specified email already exists
+Your Personal Details
+Gender: Male Female
+First name: *
+Last name: *
+Email: *
+Your Password
+Password: *
+Confirm password: *]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
 	at com.test.RegisterPageTest.verifyRegisterPageNavigation1(RegisterPageTest.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 7 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.test.RegisterPageTest#verifyRegisterPageNavigation1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>null</td><td>null</td><td>null</td><td>null</td><td>null</td><td>null</td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;gender&quot; is null
-	at com.page.RegisterPage.enterRegistrationDetails(RegisterPage.java:42)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.test.RegisterPageTest#verifyRegisterPageNavigation1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>female</td><td>homi</td><td>M</td><td>hooommiiii@gmail.com</td><td>abcdef</td><td>abcdef</td><td>pass</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.AssertionError: expected [Your registration completed] but found [The specified email already exists
+Your Personal Details
+Gender: Male Female
+First name: *
+Last name: *
+Email: *
+Your Password
+Password: *
+Confirm password: *]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
 	at com.test.RegisterPageTest.verifyRegisterPageNavigation1(RegisterPageTest.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 7 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.test.HomePageTest#verifyLoginPageText</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.test.RegisterPageTest#verifyRegisterPageNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.test.RegisterPageTest#verifyRegisterPageNavigation1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>female</td><td>homi</td><td>M</td><td>homi@gmail.com</td><td>abcdef</td><td>abcdef</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.test.RegisterPageTest#verifyRegisterPageNavigation1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>male</td><td>ram</td><td>kumar</td><td></td><td>abcdef</td><td>abcdef</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.test.RegisterPageTest#verifyRegisterPageNavigation1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>female</td><td>jeev</td><td>balaj</td><td>jeevbalaj@gmail.com</td><td>abcdef</td><td>abcdef</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.test.RegisterPageTest#verifyRegisterPageNavigation1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>female</td><td>jomm</td><td>N</td><td>jomm@gmail.com</td><td>abcdef</td><td>abcdef</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.test.RegisterPageTest#verifyRegisterPageNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.test.RegisterPageTest#verifyRegisterPageNavigation1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>female</td><td>jeev</td><td>balaj</td><td>jeevbalaj@gmail.com</td><td>abcdef</td><td>abcdef</td><td>duplicate</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.test.RegisterPageTest#verifyRegisterPageNavigation1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>male</td><td>ram</td><td></td><td>rammm@gmail.com</td><td>abcdef</td><td>abcdef</td><td>required</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
